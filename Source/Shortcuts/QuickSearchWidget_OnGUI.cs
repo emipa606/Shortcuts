@@ -11,7 +11,7 @@ public static class QuickSearchWidget_OnGUI
 {
     public static readonly Dictionary<KeyCode, Action> divertedEvents = [];
 
-    private static void Prefix()
+    public static void Prefix()
     {
         if (Event.current.type != EventType.KeyDown)
         {

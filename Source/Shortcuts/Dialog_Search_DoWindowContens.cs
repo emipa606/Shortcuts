@@ -27,7 +27,7 @@ public static class Dialog_Search_DoWindowContens
         return i == ShortcutsMain.currentSelection;
     }
 
-    private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+    public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
     {
         var matcher = new CodeMatcher(instructions)
             .MatchStartForward(Ldstr["DrawSearchResults"])
@@ -63,7 +63,7 @@ public static class Dialog_Search_DoWindowContens
     }
 
 
-    private static void Prefix(SortedList<string, Thing> ___searchResults)
+    public static void Prefix(SortedList<string, Thing> ___searchResults)
     {
         if (ShortcutsMain.currentSelection == -1 && ___searchResults.Any())
         {

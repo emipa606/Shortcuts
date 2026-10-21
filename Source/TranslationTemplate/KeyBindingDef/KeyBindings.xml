@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Toggles the selected colonists bio tab -->
+  <ToggleBio.label>Toggles the selected colonists bio tab</ToggleBio.label>
+  <!-- EN: Toggles the selected colonists gear tab -->
+  <ToggleGear.label>Toggles the selected colonists gear tab</ToggleGear.label>
+  <!-- EN: Toggles the selected colonists health tab -->
+  <ToggleHealth.label>Toggles the selected colonists health tab</ToggleHealth.label>
+  <!-- EN: Toggles the selected colonists needs tab -->
+  <ToggleNeeds.label>Toggles the selected colonists needs tab</ToggleNeeds.label>
+</LanguageData>

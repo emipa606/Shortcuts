@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using System.Reflection;
+using HarmonyLib;
 using Verse;
 
 namespace Shortcuts;
@@ -9,6 +10,6 @@ public class ShortcutsMain : Mod
 
     public ShortcutsMain(ModContentPack content) : base(content)
     {
-        new Harmony("net.pardeike.rimworld.mod.shortcuts").PatchAll();
+        new Harmony("net.pardeike.rimworld.mod.shortcuts").PatchAll(Assembly.GetExecutingAssembly());
     }
 }

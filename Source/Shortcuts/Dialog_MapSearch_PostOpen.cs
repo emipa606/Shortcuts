@@ -10,7 +10,7 @@ namespace Shortcuts;
 [HarmonyPatch(typeof(Dialog_MapSearch), nameof(Dialog_MapSearch.PostOpen))]
 public static class Dialog_MapSearch_PostOpen
 {
-    private static void Postfix(SortedList<string, Thing> ___searchResults)
+    public static void Postfix(SortedList<string, Thing> ___searchResults)
     {
         ShortcutsMain.currentSelection = -1;
         QuickSearchWidget_OnGUI.divertedEvents[KeyCode.UpArrow] = () =>

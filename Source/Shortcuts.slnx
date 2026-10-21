@@ -10,4 +10,13 @@
     <Property Name="Policies" Value="$0" />
     <Property Name="version" Value="1.0" />
   </Properties>
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/">
+    <File Path="../1.7/Defs/KeyBindings.xml" />
+  </Folder>
 </Solution>
